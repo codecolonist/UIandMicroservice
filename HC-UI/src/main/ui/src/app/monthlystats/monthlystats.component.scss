@@ -1,0 +1,8 @@
+.mnthly-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mnthly-container > * {
+    width: 250%;
+  }

@@ -1,0 +1,55 @@
+
+
+<mat-grid-list cols="4" rowHeight="100px">
+        <mat-grid-tile colspan="3" rowspan="6">
+            <form>
+                <div class="reg-container">
+                        <mat-form-field>
+                          <input 
+                                matInput placeholder="Email" 
+                                type="email" 
+                                ngModel name="email" 
+                                #email=ngModel
+                                 [(ngModel)]="model.email"
+                                 required
+                                 >
+                               <mat-error *ngIf="email.required">
+                                Email Id is required to register
+
+                               </mat-error>
+                        </mat-form-field>
+                        <mat-form-field>
+                         <input matInput placeholder="UserName" ngModel name="username" #username=ngModel [(ngModel)]="model.username" required>
+                        </mat-form-field>
+                        <mat-form-field>
+                         <input matInput placeholder="Password" type="password" ngModel name="password" #password=ngModel [(ngModel)]="model.password" required>
+                        </mat-form-field>
+                        <mat-form-field>
+                                <input matInput placeholder="FirstName" type="text" ngModel name="firstname" #firstname=ngModel [(ngModel)]="model.firstname" required>
+                        </mat-form-field>
+                         <mat-form-field>
+                                <input matInput placeholder="LastName" type="text" ngModel name="lastname" #lastname=ngModel [(ngModel)]="model.lastname" required>
+                        </mat-form-field>
+                         <mat-form-field>
+                                <input matInput placeholder="phone" type="text" ngModel name="phone" #phone=ngModel [(ngModel)]="model.phone" required>
+                         </mat-form-field>
+                
+                       
+                        
+                      </div>
+                      <button type="button" mat-raised-button color="primary" (click)="registeruser()">Register</button>
+                    </form>
+        </mat-grid-tile>
+      </mat-grid-list>
+
+
+     <!--  <div>
+
+            <p>
+             {{model | json}}
+          </p> 
+
+      </div>
+ -->
+  
+

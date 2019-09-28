@@ -1,0 +1,43 @@
+
+<div class="container">
+  <br>
+  <br>
+
+   <h3>LIST of TODOS</h3>
+
+  <br>
+  <br>
+  <br>
+ <table>
+    <tr>
+        <td style="float:right">
+            <button type="button" mat-raised-button color="primary" routerLink="/todos" >CreateTodos</button>
+        </td>
+      </tr>
+ </table>
+ <br>
+<table class="table table-bordered">
+
+  <thead>
+    <tr>
+      <th scope="col">Tast Number</th>
+      <th scope="col">Task Name</th>
+      <th scope="col">Task Description</th>
+      <th scope="col">Task Status</th>
+      <th scope="col">Start Date</th>
+      <th scope="col">End Date</th>
+    </tr>
+  </thead>
+  <tbody >
+    <tr *ngFor="let todo of todoslist">
+      <td>{{todo.taskNbr}}</td>
+      <td>{{todo.taskName}}</td>
+      <td>{{todo.taskDesc}}</td>
+      <td>{{todo.taskStatus}}</td>
+      <td>{{todo.taskDate}}</td>
+      <td>{{todo.taskEndDate}}</td>
+    </tr>
+    
+</table>
+
+</div>

@@ -1,0 +1,47 @@
+
+
+<mat-grid-list cols="4" rowHeight="100px">
+  <mat-grid-tile colspan="3" rowspan="6">
+      <form  #addTodo="ngForm">
+          <div class="todos-container">
+                  <mat-form-field>
+                    <input 
+                          matInput placeholder="taskDesc" 
+                          type="taskDesc" 
+                          ngModel name="taskDesc" 
+                          #TaskDesc=ngModel
+                           [(ngModel)]="model.taskDesc"
+                           
+                           >
+                  </mat-form-field>
+                  <mat-form-field>
+ 
+                   <input matInput placeholder="taskName" ngModel name="taskName" #taskName=ngModel [(ngModel)]="model.taskName" required>
+                  </mat-form-field>
+                    <mat-form-field>
+                          <input matInput placeholder="taskNbr" type="nu,ber" ngModel name="taskNbr" #taskNbr=ngModel [(ngModel)]="model.taskNbr" required>
+                  </mat-form-field>
+                   <mat-form-field>
+                          <input matInput placeholder="taskStatus" type="taskStatus" ngModel name="taskStatus" #taskStatus=ngModel [(ngModel)]="model.taskStatus" required>
+                  </mat-form-field>
+                  
+          
+                 
+                  
+                </div>
+                <button type="button" mat-raised-button color="primary" (click)="taskcreate(); addTodo.reset()">Create</button>
+              </form>
+  </mat-grid-tile>
+</mat-grid-list>
+
+
+<!--  <div>
+
+      <p>
+       {{model | json}}
+    </p> 
+
+</div>
+-->
+
+

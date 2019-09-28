@@ -1,0 +1,46 @@
+<div class="container">
+    <br>
+    <br>
+  
+     <h3> Monthly Status Report</h3>
+  
+    <br>
+    <br>
+    <br>
+   <table>
+      <tr>
+          <td style="float:right">
+              <button type="button" mat-raised-button color="primary" routerLink="/mnthstats" >CreateStatus</button>
+          </td>
+        </tr>
+   </table>
+   <br>
+  <table class="table table-bordered">
+  
+    <thead>
+      <tr>
+        <th scope="col">Tast Number</th>
+        <th scope="col">Task Name</th>
+        <th scope="col">Comments</th>
+        <th scope="col">Status</th>
+        <th scope="col">Project Hours</th>
+        <th scope="col">Suport Hours</th>
+        <th scope="col">Start Date</th>
+        <th scope="col">End Date</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor="let mnthst of monthstatlist">
+        <td>{{mnthst.sNo}}</td>
+        <td>{{mnthst.taskName}}</td>
+        <td>{{mnthst.comments}}</td>
+        <td>{{mnthst.status}}</td>
+        <td>{{mnthst.projectHrs}}</td>
+        <td>{{mnthst.supportHrs}}</td>
+        <td>{{mnthst.startDate}}</td>
+        <td>{{mnthst.endDate}}</td>
+      </tr>
+      
+  </table>
+  
+  </div>

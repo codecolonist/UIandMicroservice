@@ -1,0 +1,49 @@
+<br>
+<br>
+
+<mat-grid-list cols="4" rowHeight="100px">
+    <mat-grid-tile colspan="3" rowspan="6">
+        <form  #addmntstat="ngForm">
+            <div class="mnthly-container">
+                    <mat-form-field>
+                      <input 
+                            matInput placeholder="sNo" 
+                            type="number" 
+                            ngModel name="sNo" 
+                            #sNo=ngModel
+                             [(ngModel)]="model.sNo"
+                             
+                             >
+                    </mat-form-field>
+                    <mat-form-field>
+   
+                     <input matInput placeholder="taskName" ngModel name="taskName" #taskName=ngModel [(ngModel)]="model.taskName" required>
+                    </mat-form-field>
+                      <mat-form-field>
+                            <input matInput placeholder="comments" ngModel name="comments" #comments=ngModel [(ngModel)]="model.comments" required>
+                    </mat-form-field>
+                     <mat-form-field>
+                            <input matInput placeholder="status" type="status" ngModel name="status" #status=ngModel [(ngModel)]="model.status" required>
+                    </mat-form-field>
+                    <mat-form-field>
+   
+                        <input matInput placeholder="projectHrs" ngModel name="projectHrs" #projectHrs=ngModel [(ngModel)]="model.projectHrs" required>
+                       </mat-form-field>
+                         <mat-form-field>
+                               <input matInput placeholder="supportHrs" ngModel name="supportHrs" #supportHrs=ngModel [(ngModel)]="model.supportHrs" required>
+                       </mat-form-field>
+                       <mat-form-field>
+                          <input matInput placeholder="startDate" type="date" ngModel name="startDate" #startDate=ngModel [(ngModel)]="model.startDate" required>
+                      </mat-form-field>
+                        <mat-form-field>
+                               <input matInput placeholder="endDate" type="date" ngModel name="endDate" #endDate=ngModel [(ngModel)]="model.endDate" required>
+                       </mat-form-field>
+                       
+                   
+                    
+                  </div>
+                  <button type="button" mat-raised-button color="primary" (click)="statcreate(); addmntstat.reset()">Create</button>
+                </form>
+    </mat-grid-tile>
+  </mat-grid-list>
+  

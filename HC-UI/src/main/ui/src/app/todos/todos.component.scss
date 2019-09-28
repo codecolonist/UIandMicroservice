@@ -1,0 +1,8 @@
+.todos-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .todos-container > * {
+    width: 250%;
+  }

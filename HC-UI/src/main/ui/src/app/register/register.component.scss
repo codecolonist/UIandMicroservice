@@ -1,0 +1,8 @@
+.reg-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reg-container > * {
+    width: 250%;
+  }

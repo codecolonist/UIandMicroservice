@@ -1,0 +1,39 @@
+spring Eureka server : http://localhost:8761
+
+spring zuul server   : http://localhost:8080
+
+
+swagger-ui:
+
+Login service:
+
+API-Documentation
+
+http://localhost:8085/swagger-ui.html
+
+h2 db console(In memory database)
+
+http://localhost:8085/h2-console
+
+todos service:
+
+API-Documentation
+
+http://localhost:8083/swagger-ui.html
+
+h2 db console(In memory database)
+
+http://localhost:8083/h2-console
+
+monthly service:
+
+API-Documentation
+
+http://localhost:8084/swagger-ui.html
+
+h2 db console(In memory database)
+
+http://localhost:8084/h2-console
+
+
+
